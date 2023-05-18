@@ -32,7 +32,8 @@ graph TB
 <details>
 <summary>Diagram 1: GPT4All-13b-snoozy Model Architecture</summary>
 
-"Please produce a thorough and precise flowchart or block diagram that accurately portrays the design of the GPT4All-13b-snoozy Model. The diagram must contain clearly labeled blocks that indicate the name and size of each component, including hidden size (5120), intermediate size (13824), attention heads (40), and hidden layers (40). Furthermore, it is crucial that the blocks are interconnected in a manner that precisely represents the flow of data throughout the model."
+Diagram generation instructions:
+"This diagram should depict the architecture of the LLaMA model. It should start with the input data, which is then processed by the Transformer layers. Each Transformer layer should be represented by a block, showing the self-attention mechanism and the feed-forward network. The output of the model should be the final block. Arrows should be used to show the flow of data through the model. The diagram should also highlight the scaling of the model, showing how it can be adjusted from 7B to 65B parameters."
 </details>
 
 ## Using TVM for Model Conversion and Quantization
@@ -56,8 +57,9 @@ graph TB
 
 <details>
 <summary>Diagram 2: TVM Workflow</summary>
-    
-"Could you please provide a thorough and detailed explanation of the complete workflow involved in TVM? This explanation should consist of a step-by-step process that includes a flowchart illustrating the entire process, beginning with loading a pretrained PyTorch model and concluding with executing the portable graph on TVM. The flowchart must distinctly depict each stage of the process and display the connections between the stages to demonstrate the flow of the process. Specifically, the flowchart should comprise the following stages: loading a pretrained PyTorch model, converting it into a TorchScript model through tracing, importing the resulting graph into Relay, compiling the Relay graph to an LLVM target while specifying the input, and executing the portable graph on TVM. It is crucial that each of these stages is thoroughly explained to provide a comprehensive understanding of the entire process."
+ 
+Diagram generation instructions:
+"This diagram should illustrate the step-by-step process of the TVM workflow. It should start with loading a pretrained PyTorch model, followed by converting it into a TorchScript model through the use of tracing. The next step should be importing the resulting graph into Relay, then compiling the Relay graph to an LLVM target while specifying the input. The final step should be executing the portable graph on TVM. Each step should be represented by a separate block, and the blocks should be connected to show the flow of the process."
 </details>
   
 ## Using MLC_LLM for Inference
@@ -69,7 +71,8 @@ To utilize MLC_LLM for inference with the GPT4All-13b-snoozy model, the first st
 <details>
 <summary>Diagram 3: MLC_LLM Workflow</summary>
     
-"Could you please provide a thorough and detailed explanation of the complete procedure for utilizing Vulkan for inference in MLC_LLM? It is preferred that you present the workflow in a clear and concise manner, using a diagram or flowchart format. The diagram or flowchart should commence with importing the model into MLC_LLM, configuring the software to use Vulkan for inference, and culminating in executing the model on appropriate hardware. Each distinct step in the process should be represented by individual blocks in the flowchart or diagram, and they should be interlinked to demonstrate the progression of the workflow clearly."
+Diagram generation instructions:
+"This diagram should represent the training process of the LLaMA model. It should start with the input data, followed by the training of the model on trillions of tokens. The next step should be the evaluation of the model on various benchmarks, showing the performance improvement as the model is trained on more tokens. The final step should be the release of the model to the research community. Each step should be represented by a separate block, and the blocks should be connected to show the flow of the process."
 </details>
 
 ## Using ChatGPT Plus with Plugins
@@ -93,7 +96,9 @@ graph TB
 
 <details>
 <summary>Diagram 4: ChatGPT Plus with Plug-ins Workflow</summary>
-"Please create a detailed and intricate illustration that provides a step-by-step guide to integrating plugins with ChatGPT Plus. The diagram should comprehensively represent the development and integration of plugins into ChatGPT Plus, including the utilization of OpenAI's documentation to create plugins. The illustration should also demonstrate the activation of plugins during a ChatGPT session and the various ways in which they can enhance ChatGPT's functionalities. Furthermore, the diagram should showcase the different types of plugins that have been developed by various companies and hosted by OpenAI, such as web browser and code interpreter plugins. It is crucial that the illustration emphasizes the safety and broader implications of linking language models to external tools through plugins and how this can be achieved securely. The diagram should be highly detailed, all-encompassing, and accurately depict the entire process of utilizing plugins with ChatGPT Plus."
+
+Diagram generation instructions:
+"This diagram should illustrate the performance evaluation of the LLaMA model. It should start with the model, followed by the evaluation on various benchmarks such as reading comprehension, closed-book question answering, mathematical reasoning, and code generation. The results of the evaluation should be represented by a bar chart or a similar visual representation, showing the performance of the LLaMA model compared to other models like GPT-3, Chinchilla, and PaLM. The final part of the diagram should be the conclusion drawn from the evaluation."
 </details>
 
 ## References
