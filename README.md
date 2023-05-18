@@ -22,7 +22,7 @@ To convert the GPT4All-13b-snoozy model for use with MLC_LLM, the model needs to
 
 **Diagram 2: TVM Workflow**
 
-"Could you please provide a thorough and detailed explanation of the complete procedure for utilizing Vulkan for inference in MLC_LLM? It is preferred that you present the workflow in a clear and concise manner, using a diagram or flowchart format. The diagram or flowchart should commence with importing the model into MLC_LLM, configuring the software to use Vulkan for inference, and culminating in executing the model on appropriate hardware. Each distinct step in the process should be represented by individual blocks in the flowchart or diagram, and they should be interlinked to demonstrate the progression of the workflow clearly."
+"Could you please provide a thorough and detailed explanation of the complete workflow involved in TVM? This explanation should consist of a step-by-step process that includes a flowchart illustrating the entire process, beginning with loading a pretrained PyTorch model and concluding with executing the portable graph on TVM. The flowchart must distinctly depict each stage of the process and display the connections between the stages to demonstrate the flow of the process. Specifically, the flowchart should comprise the following stages: loading a pretrained PyTorch model, converting it into a TorchScript model through tracing, importing the resulting graph into Relay, compiling the Relay graph to an LLVM target while specifying the input, and executing the portable graph on TVM. It is crucial that each of these stages is thoroughly explained to provide a comprehensive understanding of the entire process."
 
 ## Using MLC_LLM for Inference
 
