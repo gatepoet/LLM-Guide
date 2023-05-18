@@ -10,9 +10,29 @@ The GPT4All-13b-snoozy model is a transformer-based language model developed by 
 
 The model's configuration can be found in the `config.json` file in the model's repository on the Hugging Face Model Hub. This file contains information about the model's architecture and training parameters.
 
-**Diagram 1: GPT4All-13b-snoozy Model Architecture**
-
+```mermaid
+graph TB
+    I["Input"]
+    T1["Transformer Block 1"]
+    T2["Transformer Block 2"]
+    T40["Transformer Block 40"]
+    O["Output"]
+    I --> T1
+    T1 --> T2
+    T2 --> T40
+    T40 --> O
+    subgraph "Transformer Block Details"
+    A["Attention Heads (40)"]
+    H["Hidden Size (5120)"]
+    I2["Intermediate Size (13824)"]
+    A --> H
+    H --> I2
+    end
+```
+<details>
+<summary>Diagram 1: GPT4All-13b-snoozy Model Architecture</summary>
 "Please produce a thorough and precise flowchart or block diagram that accurately portrays the design of the GPT4All-13b-snoozy Model. The diagram must contain clearly labeled blocks that indicate the name and size of each component, including hidden size (5120), intermediate size (13824), attention heads (40), and hidden layers (40). Furthermore, it is crucial that the blocks are interconnected in a manner that precisely represents the flow of data throughout the model."
+</details>
 
 ## Using TVM for Model Conversion and Quantization
 
@@ -20,20 +40,34 @@ TVM is an open-source machine learning compiler stack that can be used to conver
 
 To convert the GPT4All-13b-snoozy model for use with MLC_LLM, the model needs to be imported into TVM, converted to a format that MLC_LLM can use, and then quantized to reduce its size and improve its performance. This process involves several steps, including setting up the TVM environment, importing the model, converting the model, and quantizing the model.
 
-**Diagram 2: TVM Workflow**
+```mermaid
+graph TB
+    L["Load Pretrained PyTorch Model"]
+    C["Convert to TorchScript Model"]
+    I["Import Graph into Relay"]
+    R["Compile Relay Graph to LLVM Target"]
+    E["Execute Portable Graph on TVM"]
+    L --> C
+    C --> I
+    I --> R
+    R --> E
+```
 
+<details>
+<summary>Diagram 2: TVM Workflow</summary>
 "Could you please provide a thorough and detailed explanation of the complete workflow involved in TVM? This explanation should consist of a step-by-step process that includes a flowchart illustrating the entire process, beginning with loading a pretrained PyTorch model and concluding with executing the portable graph on TVM. The flowchart must distinctly depict each stage of the process and display the connections between the stages to demonstrate the flow of the process. Specifically, the flowchart should comprise the following stages: loading a pretrained PyTorch model, converting it into a TorchScript model through tracing, importing the resulting graph into Relay, compiling the Relay graph to an LLVM target while specifying the input, and executing the portable graph on TVM. It is crucial that each of these stages is thoroughly explained to provide a comprehensive understanding of the entire process."
-
+</details>
+  
 ## Using MLC_LLM for Inference
-
 
 MLC_LLM is a library developed by MLC AI that facilitates hardware-accelerated inference for large language models. It supports a variety of hardware platforms and inference backends, including Vulkan.
 
 To utilize MLC_LLM for inference with the GPT4All-13b-snoozy model, the first step involves importing the model into MLC_LLM using the `generate.py` script provided in the MLC_LLM GitHub repository. Following this, MLC_LLM needs to be configured to use Vulkan for inference using the `build.py` script. The final step involves executing the model on the target hardware platform using the `run.py` script.
 
-**Diagram 3: MLC_LLM Workflow**
-
+<details>
+<summary>Diagram 3: MLC_LLM Workflow</summary>
 "Could you please provide a thorough and detailed explanation of the complete procedure for utilizing Vulkan for inference in MLC_LLM? It is preferred that you present the workflow in a clear and concise manner, using a diagram or flowchart format. The diagram or flowchart should commence with importing the model into MLC_LLM, configuring the software to use Vulkan for inference, and culminating in executing the model on appropriate hardware. Each distinct step in the process should be represented by individual blocks in the flowchart or diagram, and they should be interlinked to demonstrate the progression of the workflow clearly."
+</details>
 
 ## Using ChatGPT Plus with Plugins
 
@@ -41,9 +75,23 @@ ChatGPT Plus, an enhanced version of ChatGPT, supports the use of plugins to ext
 
 To enhance ChatGPT Plus with plugins, the first step involves developing the plugin using the OpenAI API. This involves writing the plugin code and testing it to ensure it works correctly. Following this, the plugin is integrated into ChatGPT Plus using the OpenAI API. This involves adding the plugin to the ChatGPT Plus configuration and ensuring it is correctly loaded during a ChatGPT session. The final step involves activating the plugin during a ChatGPT session, which can be done using the ChatGPT Plus user interface.
 
-**Diagram 4: ChatGPT Plus with Plug-ins Workflow**
+```mermaid
+graph TB
+    U["User Input"]
+    IP["Input Processing"]
+    MP["Model Prediction"]
+    OP["Output Processing"]
+    R["Response"]
+    U --> IP
+    IP --> MP
+    MP --> OP
+    OP --> R
+```
 
+<details>
+<summary>Diagram 4: ChatGPT Plus with Plug-ins Workflow</summary>
 "Please create a detailed and intricate illustration that provides a step-by-step guide to integrating plugins with ChatGPT Plus. The diagram should comprehensively represent the development and integration of plugins into ChatGPT Plus, including the utilization of OpenAI's documentation to create plugins. The illustration should also demonstrate the activation of plugins during a ChatGPT session and the various ways in which they can enhance ChatGPT's functionalities. Furthermore, the diagram should showcase the different types of plugins that have been developed by various companies and hosted by OpenAI, such as web browser and code interpreter plugins. It is crucial that the illustration emphasizes the safety and broader implications of linking language models to external tools through plugins and how this can be achieved securely. The diagram should be highly detailed, all-encompassing, and accurately depict the entire process of utilizing plugins with ChatGPT Plus."
+</details>
 
 ## References
 1. [GPT4All-13b-snoozy Model on Hugging Face](https://huggingface.co/nomic-ai/gpt4all-13b-snoozy): This is a link to the GPT4All-13b-snoozy model on Hugging Face, a platform that hosts thousands of pre-trained models in multiple languages. The GPT4All-13b-snoozy model is a powerful language model that can be used for a variety of natural language processing tasks.
