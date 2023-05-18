@@ -10,29 +10,12 @@ The GPT4All-13b-snoozy model is a transformer-based language model developed by 
 
 The model's configuration can be found in the `config.json` file in the model's repository on the Hugging Face Model Hub. This file contains information about the model's architecture and training parameters.
 
-```mermaid
-graph TB
-    I["Input"]
-    T1["Transformer Block 1"]
-    T2["Transformer Block 2"]
-    T40["Transformer Block 40"]
-    O["Output"]
-    I --> T1
-    T1 --> T2
-    T2 --> T40
-    T40 --> O
-    subgraph "Transformer Block Details"
-    A["Attention Heads (40)"]
-    H["Hidden Size (5120)"]
-    I2["Intermediate Size (13824)"]
-    A --> H
-    H --> I2
-    end
-```
 <details>
 <summary>Diagram 1: GPT4All-13b-snoozy Model Architecture</summary>
 
-Diagram generation instructions:
+%%DIAGRAM_PLACEHOLDER%%
+    
+Instructions used to generate diagram:
 "This diagram should depict the architecture of the LLaMA model. It should start with the input data, which is then processed by the Transformer layers. Each Transformer layer should be represented by a block, showing the self-attention mechanism and the feed-forward network. The output of the model should be the final block. Arrows should be used to show the flow of data through the model. The diagram should also highlight the scaling of the model, showing how it can be adjusted from 7B to 65B parameters."
 </details>
 
@@ -42,23 +25,12 @@ TVM is an open-source machine learning compiler stack that can be used to conver
 
 To convert the GPT4All-13b-snoozy model for use with MLC_LLM, the model needs to be imported into TVM, converted to a format that MLC_LLM can use, and then quantized to reduce its size and improve its performance. This process involves several steps, including setting up the TVM environment, importing the model, converting the model, and quantizing the model.
 
-```mermaid
-graph TB
-    L["Load Pretrained PyTorch Model"]
-    C["Convert to TorchScript Model"]
-    I["Import Graph into Relay"]
-    R["Compile Relay Graph to LLVM Target"]
-    E["Execute Portable Graph on TVM"]
-    L --> C
-    C --> I
-    I --> R
-    R --> E
-```
-
 <details>
 <summary>Diagram 2: TVM Workflow</summary>
- 
-Diagram generation instructions:
+
+%%DIAGRAM_PLACEHOLDER%%
+    
+Instructions used to generate diagram:
 "This diagram should illustrate the step-by-step process of the TVM workflow. It should start with loading a pretrained PyTorch model, followed by converting it into a TorchScript model through the use of tracing. The next step should be importing the resulting graph into Relay, then compiling the Relay graph to an LLVM target while specifying the input. The final step should be executing the portable graph on TVM. Each step should be represented by a separate block, and the blocks should be connected to show the flow of the process."
 </details>
   
@@ -70,8 +42,10 @@ To utilize MLC_LLM for inference with the GPT4All-13b-snoozy model, the first st
 
 <details>
 <summary>Diagram 3: MLC_LLM Workflow</summary>
+
+%%DIAGRAM_PLACEHOLDER%%
     
-Diagram generation instructions:
+Instructions used to generate diagram:    
 "This diagram should represent the training process of the LLaMA model. It should start with the input data, followed by the training of the model on trillions of tokens. The next step should be the evaluation of the model on various benchmarks, showing the performance improvement as the model is trained on more tokens. The final step should be the release of the model to the research community. Each step should be represented by a separate block, and the blocks should be connected to show the flow of the process."
 </details>
 
@@ -81,23 +55,12 @@ ChatGPT Plus, an enhanced version of ChatGPT, supports the use of plugins to ext
 
 To enhance ChatGPT Plus with plugins, the first step involves developing the plugin using the OpenAI API. This involves writing the plugin code and testing it to ensure it works correctly. Following this, the plugin is integrated into ChatGPT Plus using the OpenAI API. This involves adding the plugin to the ChatGPT Plus configuration and ensuring it is correctly loaded during a ChatGPT session. The final step involves activating the plugin during a ChatGPT session, which can be done using the ChatGPT Plus user interface.
 
-```mermaid
-graph TB
-    U["User Input"]
-    IP["Input Processing"]
-    MP["Model Prediction"]
-    OP["Output Processing"]
-    R["Response"]
-    U --> IP
-    IP --> MP
-    MP --> OP
-    OP --> R
-```
-
 <details>
 <summary>Diagram 4: ChatGPT Plus with Plug-ins Workflow</summary>
 
-Diagram generation instructions:
+%%DIAGRAM_PLACEHOLDER%%
+    
+Instructions used to generate diagram:
 "This diagram should illustrate the performance evaluation of the LLaMA model. It should start with the model, followed by the evaluation on various benchmarks such as reading comprehension, closed-book question answering, mathematical reasoning, and code generation. The results of the evaluation should be represented by a bar chart or a similar visual representation, showing the performance of the LLaMA model compared to other models like GPT-3, Chinchilla, and PaLM. The final part of the diagram should be the conclusion drawn from the evaluation."
 </details>
 
