@@ -14,9 +14,6 @@ The model's configuration can be found in the `config.json` file in the model's 
 
 Understanding the GPT4All-13b-snoozy Model" section, after the revised text, add this paragraph: "For instance, the GPT4All-13b-snoozy model's ability to generate human-like text makes it ideal for applications such as chatbots, content generation, and more. Its scalability allows it to be adjusted to fit the computational resources available, making it a versatile choice for various tasks.
 
-<details>
-<summary>Diagram 1: GPT4All-13b-snoozy Model Architecture</summary>
-
 ```mermaid
 graph LR
 A[Model|fa:fa-brain{bg:skyblue}] --> B[Conversion Process|fa:fa-cog{bg:lightgreen}]
