@@ -4,6 +4,8 @@
 
 This guide provides a comprehensive overview of the process of converting and quantizing GPT4All models for use with MLC_LLM. It covers the necessary steps, from understanding the GPT4All-13b-snoozy model and its configuration, to using TVM for model conversion and quantization, and finally deploying the model with MLC_LLM using Vulkan for inference. The guide also includes information on how to use ChatGPT Plus with plugins to assist in this process.
 
+This guide is structured into four main sections: Understanding the GPT4All-13b-snoozy Model, Using TVM for Model Conversion and Quantization, Using MLC_LLM for Inference, and Using ChatGPT Plus with Plugins. Each section provides detailed information and diagrams to illustrate the process.
+
 ## Understanding the GPT4All-13b-snoozy Model
 
 The GPT4All-13b-snoozy model is a powerful language model designed for a variety of tasks. It excels in text generation, translation, summarization, and more. The model is scalable, allowing it to be adjusted from 7B to 65B parameters depending on the task and computational resources available.
@@ -13,6 +15,8 @@ The GPT4All-13b-snoozy model is a transformer-based language model developed by 
 The model's configuration can be found in the `config.json` file in the model's repository on the Hugging Face Model Hub. This file contains information about the model's architecture and training parameters.
 
 Understanding the GPT4All-13b-snoozy Model" section, after the revised text, add this paragraph: "For instance, the GPT4All-13b-snoozy model's ability to generate human-like text makes it ideal for applications such as chatbots, content generation, and more. Its scalability allows it to be adjusted to fit the computational resources available, making it a versatile choice for various tasks.
+
+Whether you're developing a chatbot, generating content, or translating text, the GPT4All-13b-snoozy model can be tailored to meet your specific needs.
 
 ```mermaid
   graph LR
