@@ -101,6 +101,8 @@ The creation of this guide was made possible through the collective efforts of t
 
 In this guide, we've covered the process of converting and quantizing GPT4All models for MLC_LLM, the benefits of using the GPT4All-13b-snoozy model, TVM, MLC_LLM, and ChatGPT Plus with plugins, and the process of creating this guide using ChatGPT with plugins. We hope this guide serves as a helpful resource for those looking to convert and quantize GPT4All models for MLC_LLM, and for those looking to create similar guides for other models.
 
+With this guide, you have the knowledge and tools to adapt the GPT4All-13b-snoozy model to a wide range of applications. Whether you're developing a chatbot, generating content, or translating text, this guide will help you optimize the model for your specific needs. Remember, the process of conversion and quantization is a balance between performance and accuracy, and this guide will help you strike that balance.
+
 ## Glossary
 
 GPT4All-13b-snoozy model: A powerful language model designed for a variety of tasks. TVM: A flexible and extensible tool for model conversion and quantization.
