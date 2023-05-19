@@ -6,6 +6,8 @@ This guide provides a comprehensive overview of the process of converting and qu
 
 ## Understanding the GPT4All-13b-snoozy Model
 
+The GPT4All-13b-snoozy model is a powerful language model designed for a variety of tasks. It excels in text generation, translation, summarization, and more. The model is scalable, allowing it to be adjusted from 7B to 65B parameters depending on the task and computational resources available.
+
 The GPT4All-13b-snoozy model is a transformer-based language model developed by Nomic AI. It has a hidden size of 5120, an intermediate size of 13824, 40 attention heads, and 40 hidden layers. The model is trained using the GPT-4 training methodology and is designed to generate human-like text.
 
 The model's configuration can be found in the `config.json` file in the model's repository on the Hugging Face Model Hub. This file contains information about the model's architecture and training parameters.
@@ -28,6 +30,8 @@ Instructions used to generate diagram:
 
 ## Using TVM for Model Conversion and Quantization
 
+TVM is a flexible and extensible tool for model conversion and quantization. It supports a wide range of models and hardware, making it a versatile choice for many machine learning tasks. TVM's capabilities include efficient model execution, support for various models and frontends, model quantization, and more.
+
 TVM is an open-source machine learning compiler stack that can be used to convert and quantize models for efficient deployment on a variety of hardware backends. TVM supports a wide range of models and hardware, and it provides a flexible and extensible platform for model optimization.
 
 To convert the GPT4All-13b-snoozy model for use with MLC_LLM, the model needs to be imported into TVM, converted to a format that MLC_LLM can use, and then quantized to reduce its size and improve its performance. This process involves several steps, including setting up the TVM environment, importing the model, converting the model, and quantizing the model.
@@ -49,6 +53,7 @@ Instructions used to generate diagram:
   
 ## Using MLC_LLM for Inference
 
+MLC_LLM is an efficient and scalable tool for inference. It supports a variety of hardware platforms and inference backends, and can run large language models on personal devices. MLC_LLM's capabilities include handling large amounts of data, complex computations, and more.
 MLC_LLM is a library developed by MLC AI that facilitates hardware-accelerated inference for large language models. It supports a variety of hardware platforms and inference backends, including Vulkan.
 
 To utilize MLC_LLM for inference with the GPT4All-13b-snoozy model, the first step involves importing the model into MLC_LLM using the `generate.py` script provided in the MLC_LLM GitHub repository. Following this, MLC_LLM needs to be configured to use Vulkan for inference using the `build.py` script. The final step involves executing the model on the target hardware platform using the `run.py` script.
@@ -68,6 +73,8 @@ Instructions used to generate diagram:
 </details>
 
 ## Using ChatGPT Plus with Plugins
+
+Plugins can greatly enhance the capabilities of ChatGPT Plus. They can introduce new features such as web browsing capabilities, API interaction, or the ability to perform complex calculations. Plugins can also provide up-to-date information, improve the contextual understanding of user inputs, interpret content from various link types, and more.
 
 ChatGPT Plus, an enhanced version of ChatGPT, supports the use of plugins to extend its capabilities. Plugins can introduce new features to ChatGPT, such as web browsing capabilities, API interaction, or the ability to perform complex calculations.
 
