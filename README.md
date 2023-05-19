@@ -16,7 +16,7 @@ The model's configuration can be found in the `config.json` file in the model's 
 <summary>Diagram 1: GPT4All-13b-snoozy Model Architecture</summary>
 
 ```mermaid
-    graph LR
+    graph
     A[Input Data] --> B[Transformer Layer 1]
     B --> C[Transformer Layer 2]
     C --> D[...]
@@ -40,11 +40,11 @@ To convert the GPT4All-13b-snoozy model for use with MLC_LLM, the model needs to
 <summary>Diagram 2: TVM Workflow</summary>
 
 ```mermaid
-graph LR
-A[Load Pretrained PyTorch Model] --> B[Convert to TorchScript Model]
-B --> C[Import Graph into Relay]
-C --> D[Compile Relay Graph to LLVM Target]
-D --> E[Execute Portable Graph on TVM]
+    graph
+    A[Load Pretrained PyTorch Model] --> B[Convert to TorchScript Model]
+    B --> C[Import Graph into Relay]
+    C --> D[Compile Relay Graph to LLVM Target]
+    D --> E[Execute Portable Graph on TVM]
 ```
     
 Instructions used to generate diagram:
@@ -62,10 +62,10 @@ To utilize MLC_LLM for inference with the GPT4All-13b-snoozy model, the first st
 <summary>Diagram 3: MLC_LLM Workflow</summary>
 
 ```mermaid
-graph LR
-A[Input Data] --> B[Train Model on Trillions of Tokens]
-B --> C[Evaluate Model on Various Benchmarks]
-C --> D[Release Model to Research Community]
+    graph
+    A[Input Data] --> B[Train Model on Trillions of Tokens]
+    B --> C[Evaluate Model on Various Benchmarks]
+    C --> D[Release Model to Research Community]
 ```
     
 Instructions used to generate diagram:    
@@ -84,10 +84,10 @@ To enhance ChatGPT Plus with plugins, the first step involves developing the plu
 <summary>Diagram 4: ChatGPT Plus with Plug-ins Workflow</summary>
 
 ```mermaid
-graph LR
-A[Model] --> B[Evaluate on Various Benchmarks]
-B --> C[Performance Results]
-C --> D[Conclusion]
+    graph
+    A[Model] --> B[Evaluate on Various Benchmarks]
+    B --> C[Performance Results]
+    C --> D[Conclusion]
 ```
     
 Instructions used to generate diagram:
