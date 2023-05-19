@@ -20,8 +20,8 @@ Whether you're developing a chatbot, generating content, or translating text, th
 
 ```mermaid
   graph
-  A[Model :brain:]:::blue --> B[Conversion Process :gear:]:::green
-  B --> C[Quantized Model :brain:]:::blue
+  A["Model 🧠"]:::blue --> B["Conversion Process ⚙️"]:::green
+  B --> C["Quantized Model 🧠"]:::blue
 classDef blue fill:skyblue
 classDef green fill:lightgreen
 ```
@@ -61,8 +61,8 @@ To utilize MLC_LLM for inference with the GPT4All-13b-snoozy model, the first st
 
 ```mermaid
   graph
-  A[Inference Process :zap:]:::blue --> B[Cloud Server :cloud:]:::green
-  B --> C[Local Device :computer:]:::blue
+  A["Inference Process ⚡"]:::blue --> B["Cloud Server ☁️"]:::green
+  B --> C["Local Device 💻"]:::blue
 classDef blue fill:skyblue
 classDef green fill:lightgreen
 ```
