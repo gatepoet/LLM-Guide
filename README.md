@@ -18,17 +18,10 @@ Understanding the GPT4All-13b-snoozy Model" section, after the revised text, add
 <summary>Diagram 1: GPT4All-13b-snoozy Model Architecture</summary>
 
 ```mermaid
-    graph
-    A[Input Data] --> B[Transformer Layer 1]
-    B --> C[Transformer Layer 2]
-    C --> D[...]
-    D --> E[Transformer Layer N]
-    E --> F[Output]
+graph LR
+A[Model|fa:fa-brain{bg:skyblue}] --> B[Conversion Process|fa:fa-cog{bg:lightgreen}]
+B --> C[Quantized Model|fa:fa-brain{bg:skyblue}]
 ```
-    
-Instructions used to generate diagram:
-"This diagram should depict the architecture of the LLaMA model. It should start with the input data, which is then processed by the Transformer layers. Each Transformer layer should be represented by a block, showing the self-attention mechanism and the feed-forward network. The output of the model should be the final block. Arrows should be used to show the flow of data through the model. The diagram should also highlight the scaling of the model, showing how it can be adjusted from 7B to 65B parameters."
-</details>
 
 ## Using TVM for Model Conversion and Quantization
 
@@ -38,22 +31,16 @@ TVM is an open-source machine learning compiler stack that can be used to conver
 
 To convert the GPT4All-13b-snoozy model for use with MLC_LLM, the model needs to be imported into TVM, converted to a format that MLC_LLM can use, and then quantized to reduce its size and improve its performance. This process involves several steps, including setting up the TVM environment, importing the model, converting the model, and quantizing the model.
 
-<details>
-<summary>Diagram 2: TVM Workflow</summary>
+The following flowchart provides a visual representation of the process:
 
 ```mermaid
-    graph
-    A[Load Pretrained PyTorch Model] --> B[Convert to TorchScript Model]
-    B --> C[Import Graph into Relay]
-    C --> D[Compile Relay Graph to LLVM Target]
-    D --> E[Execute Portable Graph on TVM]
+graph LR
+A[Step 1: Load Pretrained PyTorch Model|{bg:skyblue}] --> B[Step 2: Convert to TVM Format|{bg:lightgreen}]
+B --> C[Step 3: Quantize Model|{bg:skyblue}]
+C --> D[Step 4: Execute Portable Graph on TVM|{bg:lightgreen}]
 ```
-    
-The following flowchart provides a visual representation of the process: (insert flowchart here). This flowchart illustrates the step-by-step process of using TVM for model conversion and quantization, from loading a pretrained PyTorch model to executing the portable graph on TVM.
-    
-Instructions used to generate diagram:
-"This diagram should illustrate the step-by-step process of the TVM workflow. It should start with loading a pretrained PyTorch model, followed by converting it into a TorchScript model through the use of tracing. The next step should be importing the resulting graph into Relay, then compiling the Relay graph to an LLVM target while specifying the input. The final step should be executing the portable graph on TVM. Each step should be represented by a separate block, and the blocks should be connected to show the flow of the process."
-</details>
+
+This flowchart illustrates the step-by-step process of using TVM for model conversion and quantization, from loading a pretrained PyTorch model to executing the portable graph on TVM.
   
 ## Using MLC_LLM for Inference
 
@@ -62,19 +49,11 @@ MLC_LLM is a library developed by MLC AI that facilitates hardware-accelerated i
 
 To utilize MLC_LLM for inference with the GPT4All-13b-snoozy model, the first step involves importing the model into MLC_LLM using the `generate.py` script provided in the MLC_LLM GitHub repository. Following this, MLC_LLM needs to be configured to use Vulkan for inference using the `build.py` script. The final step involves executing the model on the target hardware platform using the `run.py` script.
 
-<details>
-<summary>Diagram 3: MLC_LLM Workflow</summary>
-
 ```mermaid
-    graph
-    A[Input Data] --> B[Train Model on Trillions of Tokens]
-    B --> C[Evaluate Model on Various Benchmarks]
-    C --> D[Release Model to Research Community]
+graph LR
+A[Inference Process|fa:fa-bolt{bg:skyblue}] --> B[Cloud Server|fa:fa-cloud{bg:lightgreen}]
+B --> C[Local Device|fa:fa-laptop{bg:skyblue}]
 ```
-    
-Instructions used to generate diagram:    
-"This diagram should represent the training process of the LLaMA model. It should start with the input data, followed by the training of the model on trillions of tokens. The next step should be the evaluation of the model on various benchmarks, showing the performance improvement as the model is trained on more tokens. The final step should be the release of the model to the research community. Each step should be represented by a separate block, and the blocks should be connected to show the flow of the process."
-</details>
 
 ## Using ChatGPT Plus with Plugins
 
@@ -83,6 +62,13 @@ Plugins can greatly enhance the capabilities of ChatGPT Plus. They can introduce
 ChatGPT Plus, an enhanced version of ChatGPT, supports the use of plugins to extend its capabilities. Plugins can introduce new features to ChatGPT, such as web browsing capabilities, API interaction, or the ability to perform complex calculations.
 
 Enhancing ChatGPT Plus with plugins has been instrumental in creating this guide. The plugins have provided up-to-date information, improved the contextual understanding of user inputs, interpreted content from various link types, and more. Specifically, we've used the Internet Search plugin to gather the most recent data on various topics, the Link Reader plugin to interpret and summarize content from web pages and documents, and the Rephrase plugin to refine user inputs for clearer and more specific prompts. This process can be replicated to create new guides for other models, ensuring the information is current, accurate, and relevant.
+
+```
+graph LR
+A[Internet Search Plugin|{bg:skyblue}] --> B[Gathers up-to-date information|{bg:lightgreen}]
+C[Link Reader Plugin|{bg:skyblue}] --> D[Interprets content from various link types|{bg:lightgreen}]
+E[Rephrase Plugin|{bg:skyblue}] --> F[Refines user inputs for clearer prompts|{bg:lightgreen}]
+```
 
 ## References
 1. [GPT4All-13b-snoozy Model on Hugging Face](https://huggingface.co/nomic-ai/gpt4all-13b-snoozy): This is a link to the GPT4All-13b-snoozy model on Hugging Face, a platform that hosts thousands of pre-trained models in multiple languages. The GPT4All-13b-snoozy model is a powerful language model that can be used for a variety of natural language processing tasks.
