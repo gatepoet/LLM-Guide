@@ -15,9 +15,9 @@ The model's configuration can be found in the `config.json` file in the model's 
 Understanding the GPT4All-13b-snoozy Model" section, after the revised text, add this paragraph: "For instance, the GPT4All-13b-snoozy model's ability to generate human-like text makes it ideal for applications such as chatbots, content generation, and more. Its scalability allows it to be adjusted to fit the computational resources available, making it a versatile choice for various tasks.
 
 ```mermaid
-graph LR
-A[Model|fa:fa-brain{bg:skyblue}] --> B[Conversion Process|fa:fa-cog{bg:lightgreen}]
-B --> C[Quantized Model|fa:fa-brain{bg:skyblue}]
+  graph LR
+  A[Model|fa:fa-brain{bg:skyblue}] --> B[Conversion Process|fa:fa-cog{bg:lightgreen}]
+  B --> C[Quantized Model|fa:fa-brain{bg:skyblue}]
 ```
 
 ## Using TVM for Model Conversion and Quantization
@@ -31,10 +31,10 @@ To convert the GPT4All-13b-snoozy model for use with MLC_LLM, the model needs to
 The following flowchart provides a visual representation of the process:
 
 ```mermaid
-graph LR
-A[Step 1: Load Pretrained PyTorch Model|{bg:skyblue}] --> B[Step 2: Convert to TVM Format|{bg:lightgreen}]
-B --> C[Step 3: Quantize Model|{bg:skyblue}]
-C --> D[Step 4: Execute Portable Graph on TVM|{bg:lightgreen}]
+  graph LR
+  A[Step 1: Load Pretrained PyTorch Model|{bg:skyblue}] --> B[Step 2: Convert to TVM Format|{bg:lightgreen}]
+  B --> C[Step 3: Quantize Model|{bg:skyblue}]
+  C --> D[Step 4: Execute Portable Graph on TVM|{bg:lightgreen}]
 ```
 
 This flowchart illustrates the step-by-step process of using TVM for model conversion and quantization, from loading a pretrained PyTorch model to executing the portable graph on TVM.
@@ -47,9 +47,9 @@ MLC_LLM is a library developed by MLC AI that facilitates hardware-accelerated i
 To utilize MLC_LLM for inference with the GPT4All-13b-snoozy model, the first step involves importing the model into MLC_LLM using the `generate.py` script provided in the MLC_LLM GitHub repository. Following this, MLC_LLM needs to be configured to use Vulkan for inference using the `build.py` script. The final step involves executing the model on the target hardware platform using the `run.py` script.
 
 ```mermaid
-graph LR
-A[Inference Process|fa:fa-bolt{bg:skyblue}] --> B[Cloud Server|fa:fa-cloud{bg:lightgreen}]
-B --> C[Local Device|fa:fa-laptop{bg:skyblue}]
+  graph LR
+  A[Inference Process|fa:fa-bolt{bg:skyblue}] --> B[Cloud Server|fa:fa-cloud{bg:lightgreen}]
+  B --> C[Local Device|fa:fa-laptop{bg:skyblue}]
 ```
 
 ## Using ChatGPT Plus with Plugins
@@ -60,11 +60,11 @@ ChatGPT Plus, an enhanced version of ChatGPT, supports the use of plugins to ext
 
 Enhancing ChatGPT Plus with plugins has been instrumental in creating this guide. The plugins have provided up-to-date information, improved the contextual understanding of user inputs, interpreted content from various link types, and more. Specifically, we've used the Internet Search plugin to gather the most recent data on various topics, the Link Reader plugin to interpret and summarize content from web pages and documents, and the Rephrase plugin to refine user inputs for clearer and more specific prompts. This process can be replicated to create new guides for other models, ensuring the information is current, accurate, and relevant.
 
-```
-graph LR
-A[Internet Search Plugin|{bg:skyblue}] --> B[Gathers up-to-date information|{bg:lightgreen}]
-C[Link Reader Plugin|{bg:skyblue}] --> D[Interprets content from various link types|{bg:lightgreen}]
-E[Rephrase Plugin|{bg:skyblue}] --> F[Refines user inputs for clearer prompts|{bg:lightgreen}]
+```mermaid
+  graph LR
+  A[Internet Search Plugin|{bg:skyblue}] --> B[Gathers up-to-date information|{bg:lightgreen}]
+  C[Link Reader Plugin|{bg:skyblue}] --> D[Interprets content from various link types|{bg:lightgreen}]
+  E[Rephrase Plugin|{bg:skyblue}] --> F[Refines user inputs for clearer prompts|{bg:lightgreen}]
 ```
 
 ## References
