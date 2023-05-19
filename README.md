@@ -39,7 +39,7 @@ To convert the GPT4All-13b-snoozy model for use with MLC_LLM, the model needs to
 <details>
 <summary>Diagram 2: TVM Workflow</summary>
 
-```
+```mermaid
 graph LR
 A[Load Pretrained PyTorch Model] --> B[Convert to TorchScript Model]
 B --> C[Import Graph into Relay]
