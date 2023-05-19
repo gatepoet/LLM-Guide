@@ -2,9 +2,7 @@
 
 ## Introduction
 
-This guide provides a comprehensive overview of the process of converting and quantizing GPT4All models for use with MLC_LLM. It covers the necessary steps, from understanding the GPT4All-13b-snoozy model and its configuration, to using TVM for model conversion and quantization, and finally deploying the model with MLC_LLM using Vulkan for inference. The guide also includes information on how to use ChatGPT Plus with plugins to assist in this process.
-
-This guide is structured into four main sections: Understanding the GPT4All-13b-snoozy Model, Using TVM for Model Conversion and Quantization, Using MLC_LLM for Inference, and Using ChatGPT Plus with Plugins. Each section provides detailed information and diagrams to illustrate the process.
+Welcome to the comprehensive guide on converting and quantizing GPT4All models for MLC_LLM. This guide will walk you through the entire process, starting from understanding the GPT4All-13b-snoozy model, using TVM for model conversion and quantization, deploying the model with MLC_LLM using Vulkan for inference, to enhancing the process with ChatGPT Plus and plugins. Each section is enriched with detailed information and illustrative diagrams to make your journey smoother.
 
 ## Introduction to the GPT4All-13b-snoozy Model
 
