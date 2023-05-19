@@ -78,21 +78,7 @@ Plugins can greatly enhance the capabilities of ChatGPT Plus. They can introduce
 
 ChatGPT Plus, an enhanced version of ChatGPT, supports the use of plugins to extend its capabilities. Plugins can introduce new features to ChatGPT, such as web browsing capabilities, API interaction, or the ability to perform complex calculations.
 
-To enhance ChatGPT Plus with plugins, the first step involves developing the plugin using the OpenAI API. This involves writing the plugin code and testing it to ensure it works correctly. Following this, the plugin is integrated into ChatGPT Plus using the OpenAI API. This involves adding the plugin to the ChatGPT Plus configuration and ensuring it is correctly loaded during a ChatGPT session. The final step involves activating the plugin during a ChatGPT session, which can be done using the ChatGPT Plus user interface.
-
-<details>
-<summary>Diagram 4: ChatGPT Plus with Plug-ins Workflow</summary>
-
-```mermaid
-    graph
-    A[Model] --> B[Evaluate on Various Benchmarks]
-    B --> C[Performance Results]
-    C --> D[Conclusion]
-```
-    
-Instructions used to generate diagram:
-"This diagram should illustrate the performance evaluation of the LLaMA model. It should start with the model, followed by the evaluation on various benchmarks such as reading comprehension, closed-book question answering, mathematical reasoning, and code generation. The results of the evaluation should be represented by a bar chart or a similar visual representation, showing the performance of the LLaMA model compared to other models like GPT-3, Chinchilla, and PaLM. The final part of the diagram should be the conclusion drawn from the evaluation."
-</details>
+Enhancing ChatGPT Plus with plugins has been instrumental in creating this guide. The plugins have provided up-to-date information, improved the contextual understanding of user inputs, interpreted content from various link types, and more. Specifically, we've used the Internet Search plugin to gather the most recent data on various topics, the Link Reader plugin to interpret and summarize content from web pages and documents, and the Rephrase plugin to refine user inputs for clearer and more specific prompts. This process can be replicated to create new guides for other models, ensuring the information is current, accurate, and relevant.
 
 ## References
 1. [GPT4All-13b-snoozy Model on Hugging Face](https://huggingface.co/nomic-ai/gpt4all-13b-snoozy): This is a link to the GPT4All-13b-snoozy model on Hugging Face, a platform that hosts thousands of pre-trained models in multiple languages. The GPT4All-13b-snoozy model is a powerful language model that can be used for a variety of natural language processing tasks.
@@ -112,3 +98,8 @@ Please note that although we have taken great care to ensure the accuracy of thi
 
 ## Acknowledgments
 The creation of this guide was made possible through the collective efforts of the OpenAI team and the wider AI community. We would like to extend our gratitude to the developers and researchers who have contributed to the development of the GPT4All-13b-snoozy, MLC_LLM, TVM, and ChatGpt plus with plug-ins. Their dedication and hard work have made these tools accessible and beneficial to a global audience. Their contributions include developing the algorithms and architectures used in these tools, writing the documentation and guides that make these tools accessible to users, and contributing to the open-source communities that support these tools.
+
+## Conclusion
+
+
+## Gloassary
