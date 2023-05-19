@@ -19,9 +19,11 @@ Understanding the GPT4All-13b-snoozy Model" section, after the revised text, add
 Whether you're developing a chatbot, generating content, or translating text, the GPT4All-13b-snoozy model can be tailored to meet your specific needs.
 
 ```mermaid
-  graph LR
-  A[Model|fa:fa-brain{bg:skyblue}] --> B[Conversion Process|fa:fa-cog{bg:lightgreen}]
-  B --> C[Quantized Model|fa:fa-brain{bg:skyblue}]
+  graph
+  A[Model fa:fa-brain]:::blue --> B[Conversion Process fa:fa-cog]:::green
+  B --> C[Quantized Model fa:fa-brain]:::blue
+classDef blue fill:skyblue
+classDef green fill:lightgreen
 ```
 
 ## Leveraging TVM for Efficient Model Conversion and Quantization
@@ -37,10 +39,12 @@ To convert the GPT4All-13b-snoozy model for use with MLC_LLM, the model needs to
 The following flowchart provides a visual representation of the process:
 
 ```mermaid
-  graph LR
-  A[Step 1: Load Pretrained PyTorch Model|{bg:skyblue}] --> B[Step 2: Convert to TVM Format|{bg:lightgreen}]
-  B --> C[Step 3: Quantize Model|{bg:skyblue}]
-  C --> D[Step 4: Execute Portable Graph on TVM|{bg:lightgreen}]
+  graph
+  A[Step 1: Load Pretrained PyTorch Model]:::blue --> B[Step 2: Convert to TVM Format]:::green
+  B --> C[Step 3: Quantize Model]:::blue
+  C --> D[Step 4: Execute Portable Graph on TVM]:::green
+classDef blue fill:skyblue
+classDef green fill:lightgreen
 ```
 
 This flowchart illustrates the step-by-step process of using TVM for model conversion and quantization, from loading a pretrained PyTorch model to executing the portable graph on TVM.
@@ -56,9 +60,11 @@ MLC_LLM's compatibility with a wide range of models and its optimization for Vul
 To utilize MLC_LLM for inference with the GPT4All-13b-snoozy model, the first step involves importing the model into MLC_LLM using the `generate.py` script provided in the MLC_LLM GitHub repository. Following this, MLC_LLM needs to be configured to use Vulkan for inference using the `build.py` script. The final step involves executing the model on the target hardware platform using the `run.py` script.
 
 ```mermaid
-  graph LR
-  A[Inference Process|fa:fa-bolt{bg:skyblue}] --> B[Cloud Server|fa:fa-cloud{bg:lightgreen}]
-  B --> C[Local Device|fa:fa-laptop{bg:skyblue}]
+  graph
+  A[Inference Process fa:fa-bolt]:::blue --> B[Cloud Server fa:fa-cloud]:::green
+  B --> C[Local Device fa:fa-laptop]:::blue
+classDef blue fill:skyblue
+classDef green fill:lightgreen
 ```
 
 ## Enhancing the Conversion Process with ChatGPT Plus and Plugins
@@ -73,9 +79,11 @@ Enhancing ChatGPT Plus with plugins has been instrumental in creating this guide
 
 ```mermaid
   graph LR
-  A[Internet Search Plugin|{bg:skyblue}] --> B[Gathers up-to-date information|{bg:lightgreen}]
-  C[Link Reader Plugin|{bg:skyblue}] --> D[Interprets content from various link types|{bg:lightgreen}]
-  E[Rephrase Plugin|{bg:skyblue}] --> F[Refines user inputs for clearer prompts|{bg:lightgreen}]
+  A[Internet Search Plugin]:::blue --> B[Gathers up-to-date information]:::green
+C[Link Reader Plugin]:::blue --> D[Interprets content from various link types]:::green
+  E[Rephrase Plugin]:::blue --> F[Refines user inputs for clearer prompts]:::green
+classDef blue fill:skyblue
+classDef green fill:lightgreen
 ```
 
 ## References
