@@ -13,7 +13,9 @@ Additionally, you will need the CLI app that can be used to chat with the compil
 
 ## Step 1: Model Download
 
-If the model is publicly available on Hugging Face, you can use the `--hf-path` option to specify the model. For example, `--hf-path meta-llama/Llama-2-7b-chat-hf` will download the model from the corresponding Hugging Face repository to the `dist/models/` directory.
+Hugging Face is a platform that hosts a wide variety of pre-trained models, including the Llama 2 models. If you haven't downloaded the model yet, you can do so directly from Hugging Face using the `--hf-path` option. For example, `--hf-path meta-llama/Llama-2-7b-chat-hf` will download the model from the corresponding Hugging Face repository to the `dist/models/` directory. You can explore more models on the [Hugging Face website](https://huggingface.co/models).
+
+If you have already downloaded the model, ensure that it is located in the `dist/models/` directory before proceeding to the next step.
 
 ## Step 2: Model Compilation
 
