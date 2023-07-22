@@ -19,7 +19,15 @@ If you have already downloaded the model, ensure that it is located in the `dist
 
 ## Step 2: Model Compilation
 
-Use the `mlc_llm.build` module to compile the model. The command should specify the model, target platform, and quantization mode. For example, to compile the Llama-2-7b-chat-hf model for CUDA, use the following command: 
+Model compilation is a crucial step in preparing the model for use. It involves translating the model into a form that can be efficiently executed on a specific hardware platform.
+
+In this step, you will use the `mlc_llm.build` module to compile the model. The command should specify the model, target platform, and quantization mode.
+
+- The `--model` option specifies the name of the model you want to compile. For example, `--model Llama-2-7b-chat-hf` specifies that you want to compile the Llama-2-7b-chat-hf model.
+- The `--target` option specifies the target platform (e.g., `cuda` for CUDA).
+- The `--quantization` option specifies the quantization mode (e.g., `q4f16_1` for 4-bit quantization).
+
+For example, to compile the Llama-2-7b-chat-hf model for CUDA, use the following command: 
 
 ```bash
 python3 -m mlc_llm.build --model Llama-2-7b-chat-hf --target cuda --quantization q4f16_1
