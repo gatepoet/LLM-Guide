@@ -37,7 +37,9 @@ The `--target` option specifies the target platform (e.g., `cuda` for CUDA). The
 
 ## Step 3: Model Validation
 
-After the compilation, you can validate the result by chatting with the model using the CLI app. For example, `mlc_chat_cli --local-id Llama-2-7b-chat-hf-q4f16_1` will start a chat session with the compiled model.
+Model validation is an essential step that ensures the compiled model is functioning as expected. It involves interacting with the model and evaluating its performance.
+
+After the compilation, you can validate the result by chatting with the model using the CLI app. This will allow you to assess the model's performance and ensure it's ready for use. For example, `mlc_chat_cli --local-id Llama-2-7b-chat-hf-q4f16_1` will start a chat session with the compiled model.
 
 ## Step 4: Model Distribution
 
