@@ -4,7 +4,12 @@ This guide will walk you through the process of converting the new Llama 2 model
 
 ## Prerequisites
 
-Before you start, ensure that you have TVM Unity installed on your machine. This is necessary for compiling models with MLC LLM. If you plan to build for webgpu, also complete the Wasm Build Environment installation. Obtain the CLI app that can be used to chat with the compiled model by following the instructions in the CLI and C++ API section.
+Before you start, ensure that you have TVM Unity and the Wasm Build Environment installed on your machine. 
+
+- [TVM Unity](https://tvm.apache.org/docs/install/index.html) is a compiler stack that enables efficient deployment of deep learning models on a variety of hardware platforms. 
+- The [Wasm Build Environment](https://github.com/emscripten-core/emsdk) is necessary if you plan to build for webgpu. 
+
+Additionally, you will need the CLI app that can be used to chat with the compiled model. You can obtain it by following the instructions in the CLI and C++ API section.
 
 ## Step 1: Model Download
 
