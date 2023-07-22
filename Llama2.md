@@ -47,6 +47,12 @@ Model distribution involves preparing the compiled model for use in other system
 
 If you want to distribute the model, you will need to package it appropriately and ensure that it can be easily integrated into the target system or application. For detailed instructions on how to do this, please refer to the 'Distribute Compiled Models' section.
 
+## Step 5: Model Deployment
+
+Model deployment involves integrating the distributed model into a system or application where it can be used to make predictions. This includes loading the model, setting up any necessary interfaces for input and output, and ensuring that the model performs as expected in the target environment.
+
+If you want to deploy the model, you will need to integrate it into your target system or application and ensure that it functions correctly. For detailed instructions on how to do this, please refer to the 'Deploy Compiled Models' section.
+
 ## Note
 
 Each compilation target produces a specific model library for the given platform. The model weight is shared across different targets. Also, using 3-bit quantization can be overly aggressive and only works for limited settings. If you encounter issues where the compiled model does not perform as expected, consider utilizing a higher number of bits for quantization (e.g., 4-bit quantization).
