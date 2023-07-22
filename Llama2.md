@@ -43,7 +43,9 @@ After the compilation, you can validate the result by chatting with the model us
 
 ## Step 4: Model Distribution
 
-If you want to distribute the model, refer to the 'Distribute Compiled Models' section.
+Model distribution involves preparing the compiled model for use in other systems or applications. This includes packaging the model and any necessary dependencies in a format that can be easily imported and used elsewhere.
+
+If you want to distribute the model, you will need to package it appropriately and ensure that it can be easily integrated into the target system or application. For detailed instructions on how to do this, please refer to the 'Distribute Compiled Models' section.
 
 ## Note
 
