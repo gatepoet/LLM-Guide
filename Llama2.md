@@ -100,10 +100,22 @@ Troubleshooting involves identifying and resolving issues that may arise when co
 
 For more detailed troubleshooting guidance, please refer to the [MLC LLM documentation](https://mlc.ai/mlc-llm/docs/compilation/compile_models.html).
 
-## Note
+## Additional Resources
 
-Each compilation target produces a specific model library for the given platform. The model weight is shared across different targets. Also, using 3-bit quantization can be overly aggressive and only works for limited settings. If you encounter issues where the compiled model does not perform as expected, consider utilizing a higher number of bits for quantization (e.g., 4-bit quantization).
+Additional resources can provide further information and help you better understand and work with the Llama 2 models. Here's a list of additional resources:
+
+1. [Meta Llama 2 Page](https://ai.meta.com/llama/): This is the official page for the Llama 2 models from Meta. It provides a comprehensive overview of the models, including technical details, partnerships, responsibility, and resources.
+
+2. [Llama 2 Technical Overview](https://ai.meta.com/llama/#technical-details): This section of the Meta Llama 2 page provides all the technical information you need to use the Llama 2 models.
+
+3. [Research Paper](https://ai.meta.com/llama/#research-paper): This research paper provides the details on the research behind the Llama 2 models.
+
+4. [Responsible Use Guide](https://ai.meta.com/llama/#responsible-use-guide): This guide provides best practices and considerations for building products powered by large language models (LLMs) in a responsible manner.
+
+5. [Open Innovation AI Research Community](https://ai.meta.com/llama/#open-innovation-ai-research-community): This community was established to promote transparency and collaboration between academic partners doing LLM research.
+
+Please note that the exact resources may vary depending on the specific topics you are interested in.
 
 ## Conclusion
 
-This guide has walked you through the process of converting the new Llama 2 models for use with CPU, CUDA GPU, and Intel GPU. By following these steps, you should be able to compile and use these models effectively.
+In conclusion, this guide provides a comprehensive overview of how to compile, distribute, and deploy the Llama 2 models. It also provides troubleshooting tips and links to additional resources. We encourage you to experiment with the Llama 2 models and contribute to the community. Happy modeling!
